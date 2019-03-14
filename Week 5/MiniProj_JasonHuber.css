@@ -3,8 +3,10 @@
 	background: teal;  
 	width: 150px;
 	height: 150px;
-	justify-content: center;
-	font-size: 45px;    
+	vertical-align: middle;
+	font-size: 60px;
+	padding: 20px;
+	text-align: center;    
     border-style: solid;
     
 }

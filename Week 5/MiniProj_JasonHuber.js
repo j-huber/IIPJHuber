@@ -13,7 +13,7 @@ function resetBoard()
     document.getElementById("6").innerHTML = "";
     document.getElementById("7").innerHTML = "";
     document.getElementById("8").innerHTML = "";
-    document.getElementById("result").innerHTML = "Game Result"
+    document.getElementById("result").innerHTML = ""
 }
 
 
