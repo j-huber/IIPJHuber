@@ -92,15 +92,15 @@ $(function(){
     
         matchingFunction(choice1, choice2)
         {
-            if (choice1 == choice2)
+            if (choice1 == choice2) //correct match 
             {
-                    //correct match 
-                    choice1 = "null1";
+                    
+                    choice1 = "null1"; // reset variables to "null"
                     choice2 = "null2";
             }
-            else
+            else //incorrect match
             {
-                //incorrect match
+                
                 choice1 = "null1";
                 choice2 = "null2";
             }
