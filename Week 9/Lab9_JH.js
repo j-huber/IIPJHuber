@@ -3,7 +3,7 @@ var blinkVar = true;
 $("#upBtn").on("click", function()
 {
     $("#box").stop();
-    $("#box").animate({bottom: '349px'}, "slow");
+    $("#box").animate({bottom: '50px'}, "slow");
 });
 $("#downBtn").on("click", function()
 {
@@ -13,7 +13,7 @@ $("#downBtn").on("click", function()
 $("#leftBtn").on("click", function()
 {
     $("#box").stop();
-    $("#box").animate({right: '349px'}, "slow");
+    $("#box").animate({right: '50px'}, "slow");
 });
 $("#rightBtn").on("click", function()
 {
@@ -48,8 +48,6 @@ $("#resetBtn").on("click", function()
 {
     $("#box").stop();
     blinkVar = false;
-    $("#box").animate({right: '349px'}, "slow");
-    $("#box").animate({down: '349px'}, "slow");
     $("#box").removeAttr("style");
 });
 });
