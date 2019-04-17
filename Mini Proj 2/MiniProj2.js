@@ -1,111 +1,243 @@
 $(function(){
     var choice1 = "null1";
     var choice2 = "null2";
-    var gameEnd = false;
+    
+    
 
     $("#newGame").on("click", function()
     {
-        $("#container").find().animate({opacity: '1'}, "slow");
+        $("#container").find("img").animate({opacity: '0'}, "slow");
+        choice1 = "null1";
+        choice2 = "null2";
     });
     
     
-    while (gameEnd == false) // loop to keep going until end condition hit
-    {
         $("#1").on("click", function()
         {
-            $("#1").animate({opacity: '1'}, "slow");
+            
+            $("#1 img").animate({opacity: '1'}, "slow");
             if(choice1 == "null1") // if first choice then set image text to choice 1
             {
-                choice1 = $("#1").attr("src");
+                choice1 = $("#1 img").attr("src");
+               
             }
-            else  // if second choice then set image text to choice 2
+            else  if (choice1 != "null1" && choice2 == "null2") // if second choice then set image text to choice 2
             {
-                choice2 = $("#1").attr("src");
+                choice2 = $("#1 img").attr("src");
+                
                 matchingFunction(choice1,choice2); // check to see if first choice matches second choice
+                choice1 = "null1";
+                choice2 = "null2";
             }
+
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
             
         });
         $("#2").on("click", function()
         {
-            $("#2").animate({opacity: '1'}, "slow");
+            $("#2 img").animate({opacity: '1'}, "slow");
             if(choice1 == "null1")
             {
-                choice1 = $("#2").attr("src");
+                choice1 = $("#2 img").attr("src");
             }
-            else
+            else if (choice1 != "null1" && choice2 == "null2")
             {
-                choice2 = $("#2").attr("src");
-                matchingFunction(choice1,choice2); 
+                choice2 = $("#2 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
             }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });    
         $("#3").on("click", function()
         {
-            $("#3").animate({opacity: '1'}, "slow");
+            $("#3 img").animate({opacity: '1'}, "slow");
             if(choice1 == "null1")
             {
-                choice1 = $("#3").attr("src");
+                choice1 = $("#3 img").attr("src");
             }
-            else
+            else if (choice1 != "null1" && choice2 == "null2")
             {
-                choice2 = $("#3").attr("src");
-                matchingFunction(choice1,choice2); 
+                choice2 = $("#3 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
             }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
            
         });
         $("#4").on("click", function()
         {
-            $("#4").animate({opacity: '1'}, "slow");
+            $("#4 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#4 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#4 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#5").on("click", function()
         {
-            $("#5").animate({opacity: '1'}, "slow");
+            $("#5 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#5 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#5 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#6").on("click", function()
         {
-            $("#6").animate({opacity: '1'}, "slow");
+            $("#6 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#6 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#6 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#7").on("click", function()
         {
-            $("#7").animate({opacity: '1'}, "slow");
+            $("#7 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#7 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#7 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#8").on("click", function()
         {
-            $("#8").animate({opacity: '1'}, "slow");
+            $("#8 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#8 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#8 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#9").on("click", function()
         {
-            $("#9").animate({opacity: '1'}, "slow");
+            $("#9 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#9 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#9 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#10").on("click", function()
         {
-            $("#10").animate({opacity: '1'}, "slow");
+            $("#10 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#10 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#10 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#11").on("click", function()
         {
-            $("#11").animate({opacity: '1'}, "slow");
+            $("#11 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
+            {
+                choice1 = $("#11 img").attr("src");
+            }
+            else if (choice1 != "null1" && choice2 == "null2")
+            {
+                choice2 = $("#11 img").attr("src");
+                matchingFunction(choice1,choice2);
+                choice1 = "null1";
+                choice2 = "null2"; 
+            }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
         });
         $("#12").on("click", function()
         {
-            $("#12").animate({opacity: '1'}, "slow");
-        });
-   
-    
-        matchingFunction(choice1, choice2)
-        {
-            if (choice1 == choice2) //correct match 
+            $("#12 img").animate({opacity: '1'}, "slow");
+            if(choice1 == "null1")
             {
-                    
-                    choice1 = "null1"; // reset variables to "null"
-                    choice2 = "null2";
+                choice1 = $("#12 img").attr("src");
             }
-            else //incorrect match
+            else if (choice1 != "null1" && choice2 == "null2")
             {
-                
+                choice2 = $("#12 img").attr("src");
+                matchingFunction(choice1,choice2); 
                 choice1 = "null1";
                 choice2 = "null2";
             }
+            console.log(choice1 +" = c1" + "    " + choice2 +" = c2 ");
+        });
+   
+    
+       function matchingFunction(choice1, choice2)
+        {
+            if (choice1 != "null1" && choice2 != "null2" && choice1 == choice2) //correct match 
+            {
+                
+                console.log("correct match");
+                console.log(choice1 + "  " + choice2);
+                choice1 = "null1"; // reset variables to "null"
+                choice2 = "null2";
+                   
+                    
+            }
+            else //incorrect match
+            {
+                console.log("incorrect match");
+                console.log(choice1 + "  " + choice2);
+                $("#container").find("img[src$='"+choice1+"']").animate({opacity: '0'}, "slow");
+                $("#container").find("img[src$='"+choice2+"']").animate({opacity: '0'}, "slow");
+                
+               
+                
+            }
+           
+            
         }
-    }
+    
 
 
 
