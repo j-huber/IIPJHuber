@@ -1,13 +1,21 @@
 $(function(){
     var choice1 = "null1";
     var choice2 = "null2";
+    var matchCount = 0;
     
+    function myFunction()
+    {
+        $("#container").find("img").animate({opacity: '0'}, "slow");
+        $("#messages").html("");
+    }
     
 
     $("#newGame").on("click", function()
     {
-        $("#container").find("img").animate({opacity: '0'}, "slow");
         $("#messages").html("");
+        $("#container").find("img").animate({opacity: '1'}, "slow");
+        $("#messages").append("Let's begin!!! Remember the cards...");
+        setTimeout(myFunction, 5000);
         choice1 = "null1";
         choice2 = "null2";
     });
@@ -220,9 +228,17 @@ $(function(){
                 $("#messages").html("");
                 console.log("correct match");
                 console.log(choice1 + "  " + choice2);
+                $("img[src$='"+choice1+"']").parent().off("click");
+                $("img[src$='"+choice2+"']").parent().off("click");
                 choice1 = "null1"; // reset variables to "null"
                 choice2 = "null2";
                 $("#messages").append("Correct Match!");
+                matchCount++;
+                if (matchCount == 6)
+                {
+                    $("#messages").html("");
+                    $("#messages").append("All matches found, Game Over!");
+                }
                    
                     
             }
