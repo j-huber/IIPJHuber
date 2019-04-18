@@ -7,6 +7,7 @@ $(function(){
     $("#newGame").on("click", function()
     {
         $("#container").find("img").animate({opacity: '0'}, "slow");
+        $("#messages").html("");
         choice1 = "null1";
         choice2 = "null2";
     });
@@ -216,21 +217,23 @@ $(function(){
         {
             if (choice1 != "null1" && choice2 != "null2" && choice1 == choice2) //correct match 
             {
-                
+                $("#messages").html("");
                 console.log("correct match");
                 console.log(choice1 + "  " + choice2);
                 choice1 = "null1"; // reset variables to "null"
                 choice2 = "null2";
+                $("#messages").append("Correct Match!");
                    
                     
             }
             else //incorrect match
             {
+                $("#messages").html("");
                 console.log("incorrect match");
                 console.log(choice1 + "  " + choice2);
                 $("#container").find("img[src$='"+choice1+"']").animate({opacity: '0'}, "slow");
                 $("#container").find("img[src$='"+choice2+"']").animate({opacity: '0'}, "slow");
-                
+                $("#messages").append("Incorrect Match! Please try again!");
                
                 
             }
