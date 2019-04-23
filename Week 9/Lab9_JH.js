@@ -3,7 +3,7 @@ var blinkVar = true;
 $("#upBtn").on("click", function()
 {
     $("#box").stop();
-    $("#box").animate({bottom: '50px'}, "slow");
+    $("#box").animate({top: '0px'}, "slow");
 });
 $("#downBtn").on("click", function()
 {
@@ -13,7 +13,7 @@ $("#downBtn").on("click", function()
 $("#leftBtn").on("click", function()
 {
     $("#box").stop();
-    $("#box").animate({right: '50px'}, "slow");
+    $("#box").animate({left: '0px'}, "slow");
 });
 $("#rightBtn").on("click", function()
 {
