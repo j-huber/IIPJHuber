@@ -25,7 +25,15 @@ function drawHouse()
 
     ctx.strokeStyle = "white";
    ctx.fillStyle = "black";
-   ctx.rect(350,400,200,200);
+   ctx.beginPath();
+   ctx.moveTo(350,400);
+   ctx.lineTo(550,400);
+   ctx.arcTo(550, 400, 550, 420, 50);
+   ctx.lineTo(550,600);
+   ctx.arcTo(550, 600, 450, 600, 50);
+   ctx.lineTo(350,600);
+   ctx.arcTo(350, 600, 350, 520, 50);
+   ctx.lineTo(350,400);
    ctx.stroke();
    ctx.fill();
 
